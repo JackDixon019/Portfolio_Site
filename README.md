@@ -1,3 +1,14 @@
+# Portfolio Draft 2
+This is my second draft of a portfolio website. I'm going to be basing the design off of another website, because I am bad at design: https://www.erikas.design/
+
+The website will feature a landing page with my portfolio works, as well as a "Contact Me" page
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

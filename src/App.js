@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 
 function App() {
     return (
-        <div className="App">
+        <div className="App min-h-screen">
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 {/* <Route path="/Contact" element={<ContactPage />} /> */}
