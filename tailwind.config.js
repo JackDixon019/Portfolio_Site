@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}", "./public/index.html"],
   theme: {
+    fontFamily: {
+      'Bebas-Neue': ['Bebas Neue'],
+      'Montserrat': ['Montserrat']
+    },
     colors: {
       'orange-peel': {
         '50': '#fffcea',
@@ -55,8 +59,6 @@ module.exports = {
         '900': '#821c0c',
         '950': '#460a04',
     },
-    
-      
     },
     extend: {},
   },
