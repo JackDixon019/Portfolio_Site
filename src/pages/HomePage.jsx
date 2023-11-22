@@ -25,7 +25,7 @@ export default function HomePage() {
                     </NavLink>
                     , and I am a student at Coder Academy currently enrolled in
                     the Full Stack Web Development Bootcamp. You can see some
-                    examples of my work over the past year here in my <a href="#" onClick={(e) => scrollToPortfolio(e)} className={linkStyle}>portfolio</a>,
+                    examples of my work over the past year here in my <a href="#portfolio" onClick={(e) => scrollToPortfolio(e)} className={linkStyle}>portfolio</a>,
                     or on my{" "}
                     <a
                         href="https://github.com/JackDixon019"
