@@ -4,7 +4,8 @@ import { linkStyle } from "../components/styles";
 
 export default function HomePage() {
 
-
+    let needlessChange = "I am making this change to test out rebasing"
+    
     function scrollToPortfolio(e){
         e.preventDefault()
         let portfolio = document.getElementById("portfolio")
