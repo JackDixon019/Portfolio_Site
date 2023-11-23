@@ -1,4 +1,10 @@
-let linkStyle = "font-Bebas-Neue text-xl text-scarlet-500 font-bold"
-let titleStyle = "p-16 font-Bebas-Neue text-5xl text-scarlet-500"
+let linkBaseStyle = "font-Bebas-Neue text-xl font-bold "
+let linkOnPapayaStyle = linkBaseStyle + "text-scarlet-500 "
+let linkOnSmaltStyle = linkBaseStyle + " text-orange-peel-400 "
+let linkOnOrangeStyle = linkBaseStyle + " text-smalt-800 "
+let titleBaseStyle = "pt-16 font-Bebas-Neue text-5xl "
+let titleOnPapayaStyle = titleBaseStyle + " text-scarlet-500 "
+let titleOnSmaltStyle = titleBaseStyle + " text-orange-peel-400 "
+let titleOnOrangeStyle = titleBaseStyle + " text-smalt-800 "
 
-module.exports = { linkStyle, titleStyle }
+module.exports = { linkOnPapayaStyle, linkOnSmaltStyle, linkOnOrangeStyle, titleOnPapayaStyle, titleOnOrangeStyle, titleOnSmaltStyle }
