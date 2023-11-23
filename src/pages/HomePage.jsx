@@ -109,9 +109,9 @@ export default function HomePage() {
                         is deployed using Heroku.
                     </p>
                     <p>
-                        <a>Website Available Here</a>
+                        {/* <a>Website Available Here</a>
                         <a>Github Repo for Frontend Available Here</a>
-                        <a>Github Repo for Backend Available Here</a>
+                        <a>Github Repo for Backend Available Here</a> */}
                     </p>
                 </article>
             </NonJaggedSection>
