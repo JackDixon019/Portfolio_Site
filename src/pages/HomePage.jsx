@@ -12,6 +12,7 @@ import NonJaggedSection from "../components/NonJaggedSection";
 import iGotYouBoo from "../images/I_Got_You_Boo_Landing_Placeholder.png";
 import challenjour from "../images/Challenjour.png";
 import ERD from "../images/ERD.png";
+import shinyCompanion from "../images/Shiny_Companion_Screenshot.png";
 
 export default function HomePage() {
     // smoothly scrolls to location on page
@@ -161,41 +162,58 @@ export default function HomePage() {
                         Shiny Hunting Companion
                     </a>
                 </h1>
-                <p>
-                    This project was the result of a week-long Hackathon, where
-                    I collaborated with my classmate{" "}
-                    <a
-                        href="https://github.com/O-App-Pesi"
-                        rel="noreferrer"
-                        className={linkOnOrangeStyle}
-                    >
-                        Joshua Thompson
-                    </a>{" "}
-                    to create an app which could assist users in hunting for
-                    so-called "shiny" pokemon.
-                </p>
-                <p>
-                    The app features several tools which can be of use to a
-                    player, these are explained in further detail in the{" "}
-                    <a
-                        href="https://github.com/ShinyHelper/ShinyHuntingCompanion_SV"
-                        rel="noreferrer"
-                        className={linkOnOrangeStyle}
-                    >
-                        Github repo
-                    </a>{" "}
-                    of the project.
-                </p>
-                <p>
-                    With this project, I am particularly happy with the neat
-                    manner in which I was able to handle iterative element
-                    rendering with the "SandwichRecipe" component, allowing me
-                    to render any number of 36 distinct elements as required.
-                    This component is used in both the "Sandwiches" page to
-                    render 18 recipes at a time, and again on each individual
-                    pokemon's page to render only the elements which correspond
-                    to the pokemon's "type".
-                </p>
+                <img
+                    src={shinyCompanion}
+                    alt="Screenshot of Shiny Companion App"
+                    className="float-right mt-8 w-3/12"
+                />
+                <article className="w-8/12 pb-12 pt-8 text-justify font-Montserrat">
+                    <p>
+                        This project was the result of a week-long Hackathon,
+                        where I collaborated with my classmate{" "}
+                        <a
+                            href="https://github.com/O-App-Pesi"
+                            rel="noreferrer"
+                            className={linkOnOrangeStyle}
+                        >
+                            Joshua Thompson
+                        </a>{" "}
+                        to create an app which could assist users in hunting for
+                        so-called "shiny" pokemon.
+                    </p>
+                    <p>
+                        The app features several tools which can be of use to a
+                        player, these are explained in further detail in the{" "}
+                        <a
+                            href="https://github.com/ShinyHelper/ShinyHuntingCompanion_SV"
+                            rel="noreferrer"
+                            className={linkOnOrangeStyle}
+                        >
+                            Github repo
+                        </a>{" "}
+                        of the project.
+                    </p>
+                    <p>
+                        This app was made using React, fetching data from{" "}
+                        <a
+                            href="https://pokeapi.co/"
+                            rel="noreferrer"
+                            className={linkOnOrangeStyle}
+                        >
+                            PokeApi
+                        </a>.
+                    </p>
+                    <p>
+                        With this project, I am particularly happy with the neat
+                        manner in which I was able to handle iterative element
+                        rendering with the "SandwichRecipe" component, allowing
+                        me to render any number of 36 distinct elements as
+                        required. This component is used in both the
+                        "Sandwiches" page to render 18 recipes at a time, and
+                        again on each individual pokemon's page to render only
+                        the elements which correspond to the pokemon's "type".
+                    </p>
+                </article>
             </NonJaggedSection>
             <JaggedSection>
                 <h1 className={titleOnPapayaStyle}>

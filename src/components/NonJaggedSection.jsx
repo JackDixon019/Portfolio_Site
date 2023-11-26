@@ -11,9 +11,8 @@ export default function NonJaggedSection({ id, children, colour }) {
         textColour = "text-smalt-950 "
     } 
 
-    let nonJaggedStyle = "nonJagged w-full font-Montserrat " + textColour + colour
     return (
-        <section id={elementID} className={nonJaggedStyle}>
+        <section id={elementID} className={"nonJagged pt-8 pb-8 w-full font-Montserrat " + textColour + colour}>
             {children}
         </section>
     );
