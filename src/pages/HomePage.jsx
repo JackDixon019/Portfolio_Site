@@ -23,41 +23,48 @@ export default function HomePage() {
         portfolio.scrollIntoView({ inline: "nearest" });
     }
 
+    let portfolioImageStyle = "mt-8 w-11/12 m-auto md:w-3/12";
+    let portfolioFlexBoxStyle = "flex flex-col justify-between md:flex-row";
+    let portfolioFlexBoxStyleReverse = "flex flex-col-reverse justify-between md:flex-row";
+    let portfolioArticleStyle = "pb-12 pt-8 text-justify font-Montserrat md:w-8/12"
+
     return (
         <div id="HomePage" className="min-h-screen flex-col">
             <JaggedSection id="intro">
                 <h1 className={titleOnPapayaStyle}>Welcome!</h1>
-                <p className="m-auto mt-12 w-8/12 font-Montserrat">
-                    My name is{" "}
-                    <NavLink to={"/contact"} className={linkOnPapayaStyle}>
-                        Jack Dixon
-                    </NavLink>
-                    , and I am a student at Coder Academy currently enrolled in
-                    the Full Stack Web Development Bootcamp. You can see some
-                    examples of my work over the past year here in my{" "}
-                    <a
-                        href="#portfolioStart"
-                        onClick={(e) => scrollToPortfolio(e)}
-                        className={linkOnPapayaStyle}
-                    >
-                        portfolio
-                    </a>
-                    , or on my{" "}
-                    <a
-                        href="https://github.com/JackDixon019"
-                        rel="noreferrer"
-                        className={linkOnPapayaStyle}
-                    >
-                        Github
-                    </a>{" "}
-                    . If you'd like to learn a little more about me, and the
-                    lessons I have learned from my projects, you can check out
-                    my{" "}
-                    <NavLink to={"/blog"} className={linkOnPapayaStyle}>
-                        blog posts
-                    </NavLink>
-                    .
-                </p>
+                <article className="pb-12">
+                    <p className="m-auto mt-12 w-8/12 font-Montserrat">
+                        My name is{" "}
+                        <NavLink to={"/contact"} className={linkOnPapayaStyle}>
+                            Jack Dixon
+                        </NavLink>
+                        , and I am a student at Coder Academy currently enrolled
+                        in the Full Stack Web Development Bootcamp. You can see
+                        some examples of my work over the past year here in my{" "}
+                        <a
+                            href="#portfolioStart"
+                            onClick={(e) => scrollToPortfolio(e)}
+                            className={linkOnPapayaStyle}
+                        >
+                            portfolio
+                        </a>
+                        , or on my{" "}
+                        <a
+                            href="https://github.com/JackDixon019"
+                            rel="noreferrer"
+                            className={linkOnPapayaStyle}
+                        >
+                            Github
+                        </a>{" "}
+                        . If you'd like to learn a little more about me, and the
+                        lessons I have learned from my projects, you can check
+                        out my{" "}
+                        <NavLink to={"/blog"} className={linkOnPapayaStyle}>
+                            blog posts
+                        </NavLink>
+                        .
+                    </p>
+                </article>
             </JaggedSection>
             <NonJaggedSection id="portfolioStart" colour="bg-smalt-800">
                 {/* TODO: Add the link to the site when deployed */}
@@ -65,56 +72,62 @@ export default function HomePage() {
                     {" "}
                     <a href="https://www.google.com">I Got You Boo</a>
                 </h1>
-                {/* TODO: Replace with actual landing page */}
-                <img
-                    src={iGotYouBoo}
-                    alt="Screenshot of I Got You Boo landing page"
-                    className="float-right mt-8 w-3/12"
-                />
-                <article className="w-8/12 pb-12 pt-8 text-justify font-Montserrat">
-                    <p>
-                        This project is a collaborative work between myself and
-                        two fellow students from Coder Academy:{" "}
-                    </p>
-                    <p>
-                        <a
-                            href="https://github.com/captainaomi"
-                            rel="noreferrer"
-                            className={linkOnSmaltStyle}
-                        >
-                            Naomi Mowbray
-                        </a>{" "}
-                        and{" "}
-                        <a
-                            href="https://github.com/ella-jones"
-                            rel="noreferrer"
-                            className={linkOnSmaltStyle}
-                        >
-                            Ella Jones
-                        </a>
-                    </p>
-                    <p>
-                        We worked together for our final assignment to create a
-                        forum for people seeking mentors to help them as they
-                        step into spaces where they are a minority.
-                    </p>
-                    <p>
-                        This site uses the MERN stack, including a frontend
-                        written using the React Framework with Tailwind for the
-                        styling, a backend written using Express and Node.js,
-                        with Mongoose acting as an ODM for interactions with a
-                        MongoDB backend.
-                    </p>
-                    <p>
-                        The frontend is deployed using Netlify, and the Backend
-                        is deployed using Heroku.
-                    </p>
-                    
-                    {/* TODO: Replace with actual link */}
+                <div className={portfolioFlexBoxStyle}>
+                    <img
+                        src={iGotYouBoo}
+                        alt="Screenshot of I Got You Boo landing page"
+                        className={portfolioImageStyle}
+                    />
+                    <article className={portfolioArticleStyle}>
+                        <p>
+                            This project is a collaborative work between myself
+                            and two fellow students from Coder Academy:{" "}
+                        </p>
+                        <p>
+                            <a
+                                href="https://github.com/captainaomi"
+                                rel="noreferrer"
+                                className={linkOnSmaltStyle}
+                            >
+                                Naomi Mowbray
+                            </a>{" "}
+                            and{" "}
+                            <a
+                                href="https://github.com/ella-jones"
+                                rel="noreferrer"
+                                className={linkOnSmaltStyle}
+                            >
+                                Ella Jones
+                            </a>
+                        </p>
+                        <p>
+                            We worked together for our final assignment to
+                            create a forum for people seeking mentors to help
+                            them as they step into spaces where they are a
+                            minority.
+                        </p>
+                        <p>
+                            This site uses the MERN stack, including a frontend
+                            written using the React Framework with Tailwind for
+                            the styling, a backend written using Express and
+                            Node.js, with Mongoose acting as an ODM for
+                            interactions with a MongoDB backend.
+                        </p>
+                        <p>
+                            The frontend is deployed using Netlify, and the
+                            Backend is deployed using Heroku.
+                        </p>
+                    </article>
+                </div>
+                {/* TODO: Replace with actual link */}
+                <aside className="pb-12">
                     <a href="https://www.google.com">
-                        <i class="fa-brands fa-linkedin text-2xl text-orange-peel-400" />
+                        <i class="fa-brands fa-github text-3xl text-orange-peel-400" />
+                    </a>{" "}
+                    <a href="https://www.google.com">
+                        <i className="fa-solid fa-globe text-3xl text-orange-peel-400" />
                     </a>
-                </article>
+                </aside>
             </NonJaggedSection>
             <JaggedSection>
                 <h1 className={titleOnPapayaStyle}>
@@ -122,35 +135,35 @@ export default function HomePage() {
                         Birdwatching API
                     </a>
                 </h1>
-                <img
-                    src={ERD}
-                    alt="ERD of Birdwatching API Database"
-                    className="float-left mt-8 w-3/12"
-                />
-                <article className="ml-auto w-8/12 pb-12 pt-8 text-justify font-Montserrat">
-                    <p>
-                        This app is an API for an amateur birdwatching app. It
-                        features full CRUD for users, locations, birds, and
-                        sessions, as well as authentication/authorisation
-                        systems to protect data. The app is designed for amateur
-                        birdwatchers to be able to easily record how many of
-                        each bird they saw during a birdwatching session, as
-                        well as the date and location of each session.
-                    </p>
-                    <p>
-                        This app was written in Python, using the Flask
-                        framework in conjunction with a SQL database and with
-                        SQLAlchemy as an ORM.
-                    </p>
-                    <p className="mt-4">
-                        <a
-                            href="https://github.com/JackDixon019/JackDixon_T2A2"
-                            className={linkOnPapayaStyle}
-                        >
-                            Github Repo Available Here
-                        </a>
-                    </p>
-                </article>
+                <div className={portfolioFlexBoxStyleReverse}>
+                    <article className={portfolioArticleStyle}>
+                        <p>
+                            This app is an API for an amateur birdwatching app.
+                            It features full CRUD for users, locations, birds,
+                            and sessions, as well as
+                            authentication/authorisation systems to protect
+                            data. The app is designed for amateur birdwatchers
+                            to be able to easily record how many of each bird
+                            they saw during a birdwatching session, as well as
+                            the date and location of each session.
+                        </p>
+                        <p>
+                            This app was written in Python, using the Flask
+                            framework in conjunction with a SQL database and
+                            with SQLAlchemy as an ORM.
+                        </p>
+                    </article>
+                    <img
+                        src={ERD}
+                        alt="ERD of Birdwatching API Database"
+                        className={portfolioImageStyle}
+                    />
+                </div>
+                <aside className="pb-12">
+                    <a href="https://github.com/JackDixon019/JackDixon_T2A2">
+                        <i class="fa-brands fa-github text-3xl text-scarlet-500" />
+                    </a>{" "}
+                </aside>
             </JaggedSection>
 
             <NonJaggedSection colour="bg-orange-peel-500">
@@ -162,12 +175,13 @@ export default function HomePage() {
                         Shiny Hunting Companion
                     </a>
                 </h1>
+                <div className={portfolioFlexBoxStyle}>
                 <img
                     src={shinyCompanion}
                     alt="Screenshot of Shiny Companion App"
-                    className="float-right mt-8 w-3/12"
+                    className={portfolioImageStyle}
                 />
-                <article className="w-8/12 pb-12 pt-8 text-justify font-Montserrat">
+                <article className={portfolioArticleStyle}>
                     <p>
                         This project was the result of a week-long Hackathon,
                         where I collaborated with my classmate{" "}
@@ -215,6 +229,15 @@ export default function HomePage() {
                         the elements which correspond to the pokemon's "type".
                     </p>
                 </article>
+                </div>
+                <aside className="pb-12">
+                    <a href="https://github.com/ShinyHelper/ShinyHuntingCompanion_SV">
+                        <i class="fa-brands fa-github text-3xl text-smalt-700" />
+                    </a>{" "}
+                    <a href="https://shiny-companion.netlify.app/">
+                        <i className="fa-solid fa-globe text-3xl text-smalt-700" />
+                    </a>
+                </aside>
             </NonJaggedSection>
             <JaggedSection>
                 <h1 className={titleOnPapayaStyle}>
@@ -222,12 +245,8 @@ export default function HomePage() {
                         Challenjour React App
                     </a>
                 </h1>
-                <img
-                    src={challenjour}
-                    alt="Screenshot of Challenjour React App"
-                    className="float-left mt-8 w-3/12"
-                />
-                <article className="ml-auto w-8/12 pb-12 pt-8 text-justify font-Montserrat">
+                <div className={portfolioFlexBoxStyleReverse}>
+                <article className={portfolioArticleStyle}>
                     <p>
                         This app was written as a side-project to explore using
                         React to create a website that would reactively render
@@ -250,6 +269,17 @@ export default function HomePage() {
                         renders
                     </p>
                 </article>
+                <img
+                    src={challenjour}
+                    alt="Screenshot of Challenjour React App"
+                    className={portfolioImageStyle}
+                />
+                </div>
+                <aside className="pb-12">
+                    <a href="https://github.com/JackDixon019/Challenjour_React_App">
+                        <i class="fa-brands fa-github text-3xl text-scarlet-500" />
+                    </a>
+                </aside>
             </JaggedSection>
         </div>
     );
