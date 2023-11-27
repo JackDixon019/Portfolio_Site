@@ -57,16 +57,19 @@ export default function HomePage() {
                         >
                             Github
                         </a>{" "}
-                        . If you'd like to learn a little more about me, and the
+                        . 
+                        {/* TODO: add blog page */}
+                        {/* If you'd like to learn a little more about me, and the
                         lessons I have learned from my projects, you can check
                         out my{" "}
                         <NavLink to={"/blog"} className={linkOnPapayaStyle}>
                             blog posts
                         </NavLink>
-                        .
+                        . */}
                     </p>
                 </article>
             </JaggedSection>
+
             <NonJaggedSection id="portfolioStart" colour="bg-smalt-800">
                 {/* TODO: Add the link to the site when deployed */}
                 <h1 className={titleOnSmaltStyle}>
@@ -130,6 +133,7 @@ export default function HomePage() {
                     </a>
                 </aside>
             </NonJaggedSection>
+
             <JaggedSection>
                 <h1 className={titleOnPapayaStyle}>
                     <a href="https://github.com/JackDixon019/JackDixon_T2A2">
@@ -240,6 +244,7 @@ export default function HomePage() {
                     </a>
                 </aside>
             </NonJaggedSection>
+
             <JaggedSection>
                 <h1 className={titleOnPapayaStyle}>
                     <a href="https://github.com/JackDixon019/Challenjour_React_App">
