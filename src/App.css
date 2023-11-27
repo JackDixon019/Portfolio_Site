@@ -8,11 +8,6 @@
 section{
   min-height: 50dvh;
 }
-.jagged{
-  position: relative;
-  padding-top: 4dvh;
-
-}
 
 .nonJagged{
   padding: 3dvw;

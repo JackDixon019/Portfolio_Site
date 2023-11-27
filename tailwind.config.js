@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     fontFamily: {
       'Bebas-Neue': ['Bebas Neue'],
-      'Montserrat': ['Montserrat']
+      'Montserrat': ['Montserrat'],
+      'Rubik': ['Rubik'],
     },
     colors: {
       'orange-peel': {
