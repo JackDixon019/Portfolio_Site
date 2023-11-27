@@ -42,9 +42,10 @@ img {
   content:"";
   height:2vw;
   position:absolute;
-  top:-2vw;
+  top:-1.9vw;
   left:-3vw;
   right:0;
+  border: 1px solid #ffeed4;
   clip-path:polygon(
      0 100%, 2.5% 0%, 5% 100%,  7.5% 0%, 
    10% 100%,12.5% 0%,15% 100%, 17.5% 0%, 

@@ -8,7 +8,8 @@ export default function Header(){
             <logo id="logo" className="text-4xl w-12 mt-1 col-start-1 text-scarlet-500 ml-3 font-Rubik hover:text-smalt-700"> <NavLink to={"/"}>JD</NavLink></logo>
             <nav className="col-start-3 mt-2 flex-row flex justify-evenly col-span-4 md:col-start-5 md:col-span-2">
                 <NavLink to={"/"} className={navbarStyle}>Home</NavLink>
-                <NavLink to={"/blog"} className={navbarStyle}>Blog</NavLink>
+                {/* TODO: make blog page */}
+                {/* <NavLink to={"/blog"} className={navbarStyle}>Blog</NavLink> */}
                 <NavLink to={"/contact"} className={navbarStyle}>Contact</NavLink>
             </nav>
         </header>
