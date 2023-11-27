@@ -18,7 +18,7 @@ export default function HomePage() {
     // smoothly scrolls to location on page
     function scrollToPortfolio(e) {
         e.preventDefault();
-        let portfolio = document.getElementById("portfolio");
+        let portfolio = document.getElementById("portfolioStart");
         document.documentElement.style.scrollBehavior = "smooth";
         portfolio.scrollIntoView({ inline: "nearest" });
     }
@@ -109,11 +109,11 @@ export default function HomePage() {
                         The frontend is deployed using Netlify, and the Backend
                         is deployed using Heroku.
                     </p>
-                    <p>
-                        {/* <a>Website Available Here</a>
-                        <a>Github Repo for Frontend Available Here</a>
-                        <a>Github Repo for Backend Available Here</a> */}
-                    </p>
+                    
+                    {/* TODO: Replace with actual link */}
+                    <a href="https://www.google.com">
+                        <i class="fa-brands fa-linkedin text-2xl text-orange-peel-400" />
+                    </a>
                 </article>
             </NonJaggedSection>
             <JaggedSection>
@@ -201,7 +201,8 @@ export default function HomePage() {
                             className={linkOnOrangeStyle}
                         >
                             PokeApi
-                        </a>.
+                        </a>
+                        .
                     </p>
                     <p>
                         With this project, I am particularly happy with the neat
