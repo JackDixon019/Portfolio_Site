@@ -2,12 +2,9 @@
 The website will feature a landing page with my portfolio works, as well as a "Contact Me" page containing contact details and a "Blog" page featuring blog posts
 
 # TODO
-- Add Github/Website logos as links
 - Add Contact page
 - Add Blog page
-- Add remaining Portfolio works
 - Add links to Got You Boo site + Repos when up
-- Increase padding of sections
 
 
 ## Available Scripts

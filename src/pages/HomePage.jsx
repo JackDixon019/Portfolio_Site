@@ -23,10 +23,11 @@ export default function HomePage() {
         portfolio.scrollIntoView({ inline: "nearest" });
     }
 
-    let portfolioImageStyle = "mt-8 w-11/12 m-auto md:w-3/12";
-    let portfolioFlexBoxStyle = "flex flex-col justify-between md:flex-row";
-    let portfolioFlexBoxStyleReverse = "flex flex-col-reverse justify-between md:flex-row";
+    let portfolioImageStyle = "mt-8 w-11/12 m-auto md:m-auto md:w-3/12";
+    let portfolioFlexBoxStyle = "flex flex-col content-center justify-between md:flex-row md:content-center";
+    let portfolioFlexBoxStyleReverse = "flex flex-col-reverse content-center justify-between md:flex-row";
     let portfolioArticleStyle = "pb-12 pt-8 text-justify font-Montserrat md:w-8/12"
+    let portfolioIconStyle = " text-5xl md:text-3xl "
 
     return (
         <div id="HomePage" className="min-h-screen flex-col">
@@ -122,10 +123,10 @@ export default function HomePage() {
                 {/* TODO: Replace with actual link */}
                 <aside className="pb-12">
                     <a href="https://www.google.com">
-                        <i class="fa-brands fa-github text-3xl text-orange-peel-400" />
+                        <i class={"fa-brands fa-github text-orange-peel-400" + portfolioIconStyle} />
                     </a>{" "}
                     <a href="https://www.google.com">
-                        <i className="fa-solid fa-globe text-3xl text-orange-peel-400" />
+                        <i className={"fa-solid fa-globe ml-24  text-orange-peel-400" + portfolioIconStyle} />
                     </a>
                 </aside>
             </NonJaggedSection>
@@ -161,7 +162,7 @@ export default function HomePage() {
                 </div>
                 <aside className="pb-12">
                     <a href="https://github.com/JackDixon019/JackDixon_T2A2">
-                        <i class="fa-brands fa-github text-3xl text-scarlet-500" />
+                        <i class={"fa-brands fa-github text-scarlet-500" + portfolioIconStyle} />
                     </a>{" "}
                 </aside>
             </JaggedSection>
@@ -232,10 +233,10 @@ export default function HomePage() {
                 </div>
                 <aside className="pb-12">
                     <a href="https://github.com/ShinyHelper/ShinyHuntingCompanion_SV">
-                        <i class="fa-brands fa-github text-3xl text-smalt-700" />
+                        <i class={"fa-brands fa-github text-smalt-700" + portfolioIconStyle} />
                     </a>{" "}
                     <a href="https://shiny-companion.netlify.app/">
-                        <i className="fa-solid fa-globe text-3xl text-smalt-700" />
+                        <i className={"fa-solid fa-globe text-smalt-700 ml-24" + portfolioIconStyle} />
                     </a>
                 </aside>
             </NonJaggedSection>
@@ -277,7 +278,7 @@ export default function HomePage() {
                 </div>
                 <aside className="pb-12">
                     <a href="https://github.com/JackDixon019/Challenjour_React_App">
-                        <i class="fa-brands fa-github text-3xl text-scarlet-500" />
+                        <i class={"fa-brands fa-github text-scarlet-500" + portfolioIconStyle} />
                     </a>
                 </aside>
             </JaggedSection>

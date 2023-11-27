@@ -9,8 +9,12 @@ section{
   min-height: 50dvh;
 }
 
-.nonJagged{
+/* .nonJagged{
   padding: 3dvw;
+} */
+
+img {
+  min-width: 240px;
 }
 
 .jagged:after {
