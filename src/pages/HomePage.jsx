@@ -132,7 +132,7 @@ export default function HomePage() {
                     <a href="https://www.google.com">
                         <i
                             class={
-                                "fa-brands fa-github text-orange-peel-400" +
+                                "fa-brands fa-github text-orange-peel-400 hover:text-scarlet-500" +
                                 portfolioIconStyle
                             }
                         />
@@ -140,7 +140,7 @@ export default function HomePage() {
                     <a href="https://www.google.com">
                         <i
                             className={
-                                "fa-solid fa-globe ml-24  text-orange-peel-400" +
+                                "fa-solid fa-globe ml-24  text-orange-peel-400 hover:text-scarlet-500" +
                                 portfolioIconStyle
                             }
                         />
@@ -183,7 +183,7 @@ export default function HomePage() {
                     <a href="https://github.com/JackDixon019/JackDixon_T2A2">
                         <i
                             class={
-                                "fa-brands fa-github text-scarlet-500" +
+                                "fa-brands fa-github text-scarlet-500 hover:text-smalt-700" +
                                 portfolioIconStyle
                             }
                         />
@@ -262,7 +262,7 @@ export default function HomePage() {
                     <a href="https://github.com/ShinyHelper/ShinyHuntingCompanion_SV">
                         <i
                             class={
-                                "fa-brands fa-github text-smalt-700" +
+                                "fa-brands fa-github text-smalt-700 hover:text-papaya-whip-100" +
                                 portfolioIconStyle
                             }
                         />
@@ -270,7 +270,7 @@ export default function HomePage() {
                     <a href="https://shiny-companion.netlify.app/">
                         <i
                             className={
-                                "fa-solid fa-globe ml-24 text-smalt-700" +
+                                "fa-solid fa-globe ml-24 text-smalt-700 hover:text-papaya-whip-100" +
                                 portfolioIconStyle
                             }
                         />
@@ -320,7 +320,7 @@ export default function HomePage() {
                     <a href="https://github.com/JackDixon019/Challenjour_React_App">
                         <i
                             class={
-                                "fa-brands fa-github text-scarlet-500" +
+                                "fa-brands fa-github text-scarlet-500 hover:text-smalt-700" +
                                 portfolioIconStyle
                             }
                         />
