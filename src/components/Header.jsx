@@ -8,26 +8,32 @@ export default function Header() {
     );
 
     let colourMatch = {
-        "bg-papaya-whip-100":
-            " text-scarlet-500 hover:text-smalt-700",
+        "bg-papaya-whip-100": " text-scarlet-500 hover:text-smalt-700",
         "bg-smalt-800": " text-orange-peel-400 hover:text-scarlet-500",
         "bg-orange-peel-500": " text-smalt-700 hover:text-papaya-whip-100",
     };
 
     // Change header colours to match current top section
     async function changeColour() {
-        // Targets 10 pixels below header
-        let target = document.elementFromPoint(
-            1,
-            document.getElementById("header").getBoundingClientRect().bottom +
-                10,
-        );
-        let bgRegex = /(bg-*).+/g
-        // Sets header colour to the classname of the target element starting with the string "bg-"
-        // Await is used to make sure header bg colour and text colour update on same scroll
-        await setHeaderColour(bgRegex.exec(target.className)[0].split(" ")[0]);
-        // Sets text colour according to background colour
-        await setNavbarTextColour(colourMatch[headerColour]);
+        try {
+            // Targets 10 pixels below header
+            let target = document.elementFromPoint(
+                1, document.getElementById("header").getBoundingClientRect().bottom + 10,
+            );
+
+            let bgRegex = /(bg-*).+/g
+            // Sets header colour to the classname of the target element starting with the string "bg-"
+            // Await is used to make sure header bg colour and text colour update on same scroll
+            await setHeaderColour(
+                bgRegex.exec(target.className)[0].split(" ")[0],
+            );
+            // Sets text colour according to background colour
+            await setNavbarTextColour(colourMatch[headerColour]);
+        } catch (error) {
+            // If you zoom in on desktop, elementFromPoint starts getting funky 
+            // but the header isn't visible at this point anyway... so it's fine
+            console.log(error);
+        }
     }
 
     // Listens for scroll and updates header colours accordingly
@@ -36,7 +42,7 @@ export default function Header() {
         window.addEventListener("scroll", onScroll, { passive: true });
         return () => window.removeEventListener("scroll", onScroll);
 
-    // eslint-disable-next-line
+        // eslint-disable-next-line
     }, [headerColour]);
 
     let navbarStyle = "text-4xl font-Bebas-Neue " + navbarTextColour;
