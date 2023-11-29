@@ -60,7 +60,7 @@ export default function HomePage() {
                             className={linkOnPapayaStyle}
                         >
                             Github
-                        </a>{" "}
+                        </a>
                         .{/* TODO: add blog page */}
                         {/* If you'd like to learn a little more about me, and the
                         lessons I have learned from my projects, you can check
