@@ -14,7 +14,7 @@ export default function Header() {
     };
 
     // Change header colours to match current top section
-    async function changeColour() {
+    function changeColour() {
         try {
             // Targets 10 pixels below header
             let target = document.elementFromPoint(
@@ -23,21 +23,25 @@ export default function Header() {
 
             let bgRegex = /(bg-*).+/g
             // Sets header colour to the classname of the target element starting with the string "bg-"
-            // Await is used to make sure header bg colour and text colour update on same scroll
-            await setHeaderColour(
+            setHeaderColour(
                 bgRegex.exec(target.className)[0].split(" ")[0],
             );
-            // Sets text colour according to background colour
-            await setNavbarTextColour(colourMatch[headerColour]);
         } catch (error) {
             // If you zoom in on desktop, elementFromPoint starts getting funky 
             // but the header isn't visible at this point anyway... so it's fine
             console.log(error);
         }
     }
+    
+    function changeHeaderTextColour(){
+        console.log(headerColour)
+        // Sets text colour according to background colour
+        setNavbarTextColour(colourMatch[headerColour]);
+    }
 
     // Listens for scroll and updates header colours accordingly
     useEffect(() => {
+        changeHeaderTextColour()
         const onScroll = () => changeColour();
         window.addEventListener("scroll", onScroll, { passive: true });
         return () => window.removeEventListener("scroll", onScroll);
