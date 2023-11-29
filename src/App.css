@@ -42,7 +42,12 @@ img {
   content:"";
   height:2vw;
   position:absolute;
-  top:-1.9vw;
+
+  /* Some screens leave a tiny gap between the base and the section when top:2dvw,
+  so having the jags start slightly below the top edge prevents that
+  This causes another issue of "flattening" the tips of the jags, 
+  so it's just super close to 2dvw */
+  top:-1.999vw;
   left:-3vw;
   right:0;
   border: 1px solid #ffeed4;

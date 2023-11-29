@@ -131,7 +131,7 @@ export default function HomePage() {
                 <aside className="pb-12">
                     <a href="https://www.google.com">
                         <i
-                            class={
+                            className={
                                 "fa-brands fa-github text-orange-peel-400 hover:text-scarlet-500" +
                                 portfolioIconStyle
                             }
@@ -182,7 +182,7 @@ export default function HomePage() {
                 <aside className="pb-12">
                     <a href="https://github.com/JackDixon019/JackDixon_T2A2">
                         <i
-                            class={
+                            className={
                                 "fa-brands fa-github text-scarlet-500 hover:text-smalt-700" +
                                 portfolioIconStyle
                             }
@@ -261,7 +261,7 @@ export default function HomePage() {
                 <aside className="pb-12">
                     <a href="https://github.com/ShinyHelper/ShinyHuntingCompanion_SV">
                         <i
-                            class={
+                            className={
                                 "fa-brands fa-github text-smalt-700 hover:text-papaya-whip-100" +
                                 portfolioIconStyle
                             }
@@ -319,7 +319,7 @@ export default function HomePage() {
                 <aside className="pb-12">
                     <a href="https://github.com/JackDixon019/Challenjour_React_App">
                         <i
-                            class={
+                            className={
                                 "fa-brands fa-github text-scarlet-500 hover:text-smalt-700" +
                                 portfolioIconStyle
                             }
