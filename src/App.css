@@ -47,7 +47,7 @@ img {
   so having the jags start slightly below the top edge prevents that
   This causes another issue of "flattening" the tips of the jags, 
   so it's just super close to 2dvw */
-  top:-1.999vw;
+  top:-1.99vw;
   left:-3vw;
   right:0;
   border: 1px solid #ffeed4;
