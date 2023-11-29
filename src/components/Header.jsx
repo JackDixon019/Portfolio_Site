@@ -15,7 +15,7 @@ export default function Header() {
     };
 
     // Change header colours to match current top section
-    function changeColour() {
+    async function changeColour() {
         // Targets 10 pixels below header
         let target = document.elementFromPoint(
             1,
@@ -23,14 +23,19 @@ export default function Header() {
                 10,
         );
         let bgRegex = /(bg-*).+/g
-        setHeaderColour(bgRegex.exec(target.className)[0].split(" ")[0]);
-        setNavbarTextColour(colourMatch[headerColour]);
+        // Sets header colour to the classname of the target element starting with the string "bg-"
+        // Await is used to make sure header bg colour and text colour update on same scroll
+        await setHeaderColour(bgRegex.exec(target.className)[0].split(" ")[0]);
+        // Sets text colour according to background colour
+        await setNavbarTextColour(colourMatch[headerColour]);
     }
 
+    // Listens for scroll and updates header colours accordingly
     useEffect(() => {
         const onScroll = () => changeColour();
         window.addEventListener("scroll", onScroll, { passive: true });
         return () => window.removeEventListener("scroll", onScroll);
+
     // eslint-disable-next-line
     }, [headerColour]);
 
