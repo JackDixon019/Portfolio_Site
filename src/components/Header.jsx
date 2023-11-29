@@ -31,6 +31,7 @@ export default function Header() {
         const onScroll = () => changeColour();
         window.addEventListener("scroll", onScroll, { passive: true });
         return () => window.removeEventListener("scroll", onScroll);
+    // eslint-disable-next-line
     }, [headerColour]);
 
     let navbarStyle = "text-4xl font-Bebas-Neue " + navbarTextColour;
