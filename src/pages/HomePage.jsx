@@ -75,7 +75,6 @@ export default function HomePage() {
 
             {/* IGYB */}
             <NonJaggedSection id="portfolioStart" colour="bg-smalt-800">
-                {/* TODO: Add the link to the site when deployed */}
                 <h1 className={titleOnSmaltStyle}>
                     {" "}
                     <a href="https://igotyouboo.netlify.app/">I Got You Boo</a>
@@ -127,7 +126,6 @@ export default function HomePage() {
                         </p>
                     </article>
                 </div>
-                {/* TODO: Replace with actual link */}
                 <aside className="pb-12">
                     <a href="https://github.com/orgs/IGotYouBoo-Crew/repositories">
                         <i
