@@ -1,5 +1,5 @@
 import JaggedSection from "../components/JaggedSection";
-import { colours, styles } from "../components/styles";
+import { styles } from "../components/styles";
 import resume from "../Jack-Dixon-Resume-Dev.pdf";
 import EnvelopeIcon from "@heroicons/react/24/solid/EnvelopeIcon";
 import DocumentIcon from "@heroicons/react/24/solid/DocumentTextIcon";
