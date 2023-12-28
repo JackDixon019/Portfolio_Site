@@ -1,12 +1,8 @@
 import { NavLink } from "react-router-dom";
 import JaggedSection from "../components/JaggedSection";
 import {
-    linkOnOrangeStyle,
-    linkOnPapayaStyle,
-    linkOnSmaltStyle,
-    titleOnOrangeStyle,
-    titleOnPapayaStyle,
-    titleOnSmaltStyle,
+    styles, 
+    colours,
 } from "../components/styles";
 import NonJaggedSection from "../components/NonJaggedSection";
 import iGotYouBoo from "../images/I_Got_You_Boo_Landing_Placeholder.png";
@@ -36,11 +32,11 @@ export default function HomePage() {
         <div id="HomePage" className="min-h-screen flex-col">
             {/* Intro */}
             <JaggedSection id="intro">
-                <h1 className={titleOnPapayaStyle}>Welcome!</h1>
+                <h1 className={styles.title + colours.linkOnPapaya}>Welcome!</h1>
                 <article className="pb-12">
                     <p className="m-auto mt-12 w-8/12 font-Montserrat">
                         My name is{" "}
-                        <NavLink to={"/contact"} className={linkOnPapayaStyle}>
+                        <NavLink to={"/contact"} className={styles.link + colours.linkOnPapaya}>
                             Jack Dixon
                         </NavLink>
                         , and I am a student at Coder Academy currently enrolled
@@ -49,7 +45,7 @@ export default function HomePage() {
                         <a
                             href="#portfolioStart"
                             onClick={(e) => scrollToPortfolio(e)}
-                            className={linkOnPapayaStyle}
+                            className={styles.link + colours.linkOnPapaya}
                         >
                             portfolio
                         </a>
@@ -57,7 +53,7 @@ export default function HomePage() {
                         <a
                             href="https://github.com/JackDixon019"
                             rel="noreferrer"
-                            className={linkOnPapayaStyle}
+                            className={styles.link + colours.linkOnPapaya}
                         >
                             Github
                         </a>
@@ -65,7 +61,7 @@ export default function HomePage() {
                         {/* If you'd like to learn a little more about me, and the
                         lessons I have learned from my projects, you can check
                         out my{" "}
-                        <NavLink to={"/blog"} className={linkOnPapayaStyle}>
+                        <NavLink to={"/blog"} className={styles.link + colours.linkOnPapaya}>
                             blog posts
                         </NavLink>
                         . */}
@@ -75,7 +71,7 @@ export default function HomePage() {
 
             {/* IGYB */}
             <NonJaggedSection id="portfolioStart" colour="bg-smalt-800">
-                <h1 className={titleOnSmaltStyle}>
+                <h1 className={styles.title + colours.linkOnSmalt}>
                     {" "}
                     <a href="https://igotyouboo.netlify.app/">I Got You Boo</a>
                 </h1>
@@ -94,7 +90,7 @@ export default function HomePage() {
                             <a
                                 href="https://github.com/captainaomi"
                                 rel="noreferrer"
-                                className={linkOnSmaltStyle}
+                                className={styles.link + colours.linkOnSmalt}
                             >
                                 Naomi Mowbray
                             </a>{" "}
@@ -102,7 +98,7 @@ export default function HomePage() {
                             <a
                                 href="https://github.com/ella-jones"
                                 rel="noreferrer"
-                                className={linkOnSmaltStyle}
+                                className={styles.link + colours.linkOnSmalt}
                             >
                                 Ella Jones
                             </a>
@@ -148,7 +144,7 @@ export default function HomePage() {
 
             {/* Birdwatching API */}
             <JaggedSection>
-                <h1 className={titleOnPapayaStyle}>
+                <h1 className={styles.title + colours.linkOnPapaya}>
                     <a href="https://github.com/JackDixon019/JackDixon_T2A2">
                         Birdwatching API
                     </a>
@@ -191,7 +187,7 @@ export default function HomePage() {
 
             {/* Shiny Companion */}
             <NonJaggedSection colour="bg-orange-peel-500">
-                <h1 className={titleOnOrangeStyle}>
+                <h1 className={styles.title + colours.linkOnOrange}>
                     <a
                         href="https://shiny-companion.netlify.app/"
                         rel="noreferrer"
@@ -212,7 +208,7 @@ export default function HomePage() {
                             <a
                                 href="https://github.com/O-App-Pesi"
                                 rel="noreferrer"
-                                className={linkOnOrangeStyle}
+                                className={styles.link + colours.linkOnOrange}
                             >
                                 Joshua Thompson
                             </a>{" "}
@@ -226,7 +222,7 @@ export default function HomePage() {
                             <a
                                 href="https://github.com/ShinyHelper/ShinyHuntingCompanion_SV"
                                 rel="noreferrer"
-                                className={linkOnOrangeStyle}
+                                className={styles.link + colours.linkOnOrange}
                             >
                                 Github repo
                             </a>{" "}
@@ -237,7 +233,7 @@ export default function HomePage() {
                             <a
                                 href="https://pokeapi.co/"
                                 rel="noreferrer"
-                                className={linkOnOrangeStyle}
+                                className={styles.link + colours.linkOnOrange}
                             >
                                 PokeApi
                             </a>
@@ -278,7 +274,7 @@ export default function HomePage() {
 
             {/* Challenjour */}
             <JaggedSection>
-                <h1 className={titleOnPapayaStyle}>
+                <h1 className={styles.title + colours.linkOnPapaya}>
                     <a href="https://github.com/JackDixon019/Challenjour_React_App">
                         Challenjour React App
                     </a>

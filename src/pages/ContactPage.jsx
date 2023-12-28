@@ -1,5 +1,5 @@
 import JaggedSection from "../components/JaggedSection";
-import { titleOnPapayaStyle } from "../components/styles";
+import { colours, styles } from "../components/styles";
 import resume from "../Jack-Dixon-Resume-Dev.pdf";
 import EnvelopeIcon from "@heroicons/react/24/solid/EnvelopeIcon";
 import DocumentIcon from "@heroicons/react/24/solid/DocumentTextIcon";
@@ -9,7 +9,7 @@ export default function ContactPage() {
     let contactLinkStyle = "font-Bebas-Neue text-3xl font-bold ml-4 mt-auto"
     return (
         <JaggedSection>
-            <h1 className={titleOnPapayaStyle}>Contact</h1>
+            <h1 className={styles.title + " text-scarlet-500"}>Contact</h1>
             <div className="m-auto mt-12 w-6/12 text-center font-Montserrat ">
                 <a href="https://github.com/JackDixon019">
                     <div className={contactDivStyle}>
