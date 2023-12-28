@@ -34,7 +34,6 @@ export default function Header() {
     }
     
     function changeHeaderTextColour(){
-        console.log(headerColour)
         // Sets text colour according to background colour
         setNavbarTextColour(colourMatch[headerColour]);
     }
