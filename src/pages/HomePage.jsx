@@ -78,7 +78,7 @@ export default function HomePage() {
                 {/* TODO: Add the link to the site when deployed */}
                 <h1 className={titleOnSmaltStyle}>
                     {" "}
-                    <a href="https://www.google.com">I Got You Boo</a>
+                    <a href="https://igotyouboo.netlify.app/">I Got You Boo</a>
                 </h1>
                 <div className={portfolioFlexBoxStyle}>
                     <img
@@ -129,7 +129,7 @@ export default function HomePage() {
                 </div>
                 {/* TODO: Replace with actual link */}
                 <aside className="pb-12">
-                    <a href="https://www.google.com">
+                    <a href="https://github.com/orgs/IGotYouBoo-Crew/repositories">
                         <i
                             className={
                                 "fa-brands fa-github text-orange-peel-400 hover:text-scarlet-500" +
@@ -137,7 +137,7 @@ export default function HomePage() {
                             }
                         />
                     </a>{" "}
-                    <a href="https://www.google.com">
+                    <a href="https://igotyouboo.netlify.app/">
                         <i
                             className={
                                 "fa-solid fa-globe ml-24  text-orange-peel-400 hover:text-scarlet-500" +
