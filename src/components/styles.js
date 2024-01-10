@@ -1,6 +1,6 @@
 let styles = {
     link: "font-Bebas-Neue text-xl font-bold ",
-    title: "pt-16 font-Bebas-Neue text-5xl ",
+    title: "pt-16 font-Bebas-Neue text-5xl w-fit m-auto ",
 };
 let colours = {
     linkOnPapaya: "text-scarlet-500 hover:text-smalt-700 ",

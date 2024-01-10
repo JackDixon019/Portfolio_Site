@@ -1,9 +1,6 @@
 import { NavLink } from "react-router-dom";
 import JaggedSection from "../components/JaggedSection";
-import {
-    styles, 
-    colours,
-} from "../components/styles";
+import { styles, colours } from "../components/styles";
 import NonJaggedSection from "../components/NonJaggedSection";
 import iGotYouBoo from "../images/I_Got_You_Boo_Landing_Placeholder.png";
 import challenjour from "../images/Challenjour.png";
@@ -19,29 +16,36 @@ export default function HomePage() {
         portfolio.scrollIntoView({ inline: "nearest" });
     }
 
-    let portfolioImageStyle = "mt-8 w-11/12 m-auto md:m-auto md:w-3/12";
+    let portfolioImageStyle =
+        "mt-8 w-11/12 m-auto md:m-auto lg:w-3/12 lg:mx-8 md:min-w-[360px]";
     let portfolioFlexBoxStyle =
-        "flex flex-col content-center justify-between md:flex-row md:content-center";
+        "flex flex-col content-center justify-between lg:flex-row lg:content-center";
     let portfolioFlexBoxStyleReverse =
-        "flex flex-col-reverse content-center justify-between md:flex-row";
+        "flex flex-col-reverse content-center justify-between lg:flex-row";
     let portfolioArticleStyle =
-        "pb-12 pt-8 text-justify font-Montserrat md:w-8/12";
+        "pb-12 pt-8 text-justify font-Montserrat lg:w-8/12";
     let portfolioIconStyle = " text-5xl md:text-3xl ";
 
     return (
         <div id="HomePage" className="min-h-screen flex-col">
             {/* Intro */}
             <JaggedSection id="intro">
-                <h1 className={styles.title + colours.linkOnPapaya}>Welcome!</h1>
+                <h1 className={styles.title + colours.linkOnPapaya}>
+                    Welcome!
+                </h1>
                 <article className="pb-12">
                     <p className="m-auto mt-12 w-8/12 font-Montserrat">
                         My name is{" "}
-                        <NavLink to={"/contact"} className={styles.link + colours.linkOnPapaya}>
+                        <NavLink
+                            to={"/contact"}
+                            className={styles.link + colours.linkOnPapaya}
+                        >
                             Jack Dixon
                         </NavLink>
-                        , and I am a student at Coder Academy currently enrolled
-                        in the Full Stack Web Development Bootcamp. You can see
-                        some examples of my work over the past year here in my{" "}
+                        , and I am a Full-Stack Software Developer who has
+                        recently graduated from the Coder Academy Full Stack Web
+                        Development Bootcamp. You can see some examples of my
+                        work over the past year here in my{" "}
                         <a
                             href="#portfolioStart"
                             onClick={(e) => scrollToPortfolio(e)}
@@ -79,7 +83,7 @@ export default function HomePage() {
                     <img
                         src={iGotYouBoo}
                         alt="Screenshot of I Got You Boo landing page"
-                        className={portfolioImageStyle}
+                        className={portfolioImageStyle + " "}
                     />
                     <article className={portfolioArticleStyle}>
                         <p>

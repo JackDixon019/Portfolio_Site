@@ -12,7 +12,7 @@ export default function NonJaggedSection({ id, children, colour }) {
     } 
 
     return (
-        <section id={elementID} className={"nonJagged p-12 w-full font-Montserrat " + textColour + colour}>
+        <section id={elementID} className={"lg:pr-16 xl:pr-24 p-12 w-full font-Montserrat " + textColour + colour}>
             {children}
         </section>
     );
