@@ -2,10 +2,8 @@
 The website will feature a landing page with my portfolio works, as well as a "Contact Me" page containing contact details and a "Blog" page featuring blog posts
 
 # TODO
-- Add Contact page
 - Add Blog page
-- Add links to Got You Boo site + Repos when up
-
+- Write blog posts
 
 ## Available Scripts
 
