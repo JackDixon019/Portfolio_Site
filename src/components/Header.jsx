@@ -72,7 +72,7 @@ export default function Header() {
                     Home
                 </NavLink>
                 {/* TODO: make blog page */}
-                {/* <NavLink to={"/blog"} className={navbarStyle}>Blog</NavLink> */}
+                <NavLink to={"/blog"} className={navbarStyle}>Blog</NavLink>
                 <NavLink to={"/contact"} className={navbarStyle}>
                     Contact
                 </NavLink>
