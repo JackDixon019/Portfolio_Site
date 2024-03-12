@@ -280,7 +280,7 @@ print(f"Time taken to run asynchronously: %.2f" % async_finish_time)  # -> 1 sec
                             waiting together at (almost) the same time.
                         </p>
                         <p className="mb-4">
-                            Good luck and have fun with using asyncio in your future projects!
+                            Good luck, and have fun with using asyncio in your future projects!
                         </p>
                     </article>
                 </div>
