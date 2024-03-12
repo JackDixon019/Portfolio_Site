@@ -7,7 +7,7 @@ export default function BlogPage() {
     return (
         <div>
             <JaggedSection id="intro">
-                <h1 className={styles.title + colours.linkOnPapaya}>Blog</h1>
+                <h1 className={styles.title + colours.linkOnPapaya + " m-auto"}>Blog</h1>
             </JaggedSection>
             <NonJaggedSection colour="bg-smalt-800">
                 <h1 className={styles.title + colours.linkOnSmalt}>
