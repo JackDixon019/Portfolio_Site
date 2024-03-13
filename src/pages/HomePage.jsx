@@ -30,7 +30,7 @@ export default function HomePage() {
         <div id="HomePage" className="min-h-screen flex-col">
             {/* Intro */}
             <JaggedSection id="intro">
-                <h1 className={styles.title + colours.linkOnPapaya}>
+                <h1 className={styles.title + colours.link.papaya}>
                     Welcome!
                 </h1>
                 <article className="pb-12">
@@ -38,7 +38,7 @@ export default function HomePage() {
                         My name is{" "}
                         <NavLink
                             to={"/contact"}
-                            className={styles.link + colours.linkOnPapaya}
+                            className={styles.link + colours.link.papaya}
                         >
                             Jack Dixon
                         </NavLink>
@@ -49,7 +49,7 @@ export default function HomePage() {
                         <a
                             href="#portfolioStart"
                             onClick={(e) => scrollToPortfolio(e)}
-                            className={styles.link + colours.linkOnPapaya}
+                            className={styles.link + colours.link.papaya}
                         >
                             portfolio
                         </a>
@@ -57,7 +57,7 @@ export default function HomePage() {
                         <a
                             href="https://github.com/JackDixon019"
                             rel="noreferrer"
-                            className={styles.link + colours.linkOnPapaya}
+                            className={styles.link + colours.link.papaya}
                         >
                             Github
                         </a>
@@ -65,7 +65,7 @@ export default function HomePage() {
                         {/* If you'd like to learn a little more about me, and the
                         lessons I have learned from my projects, you can check
                         out my{" "}
-                        <NavLink to={"/blog"} className={styles.link + colours.linkOnPapaya}>
+                        <NavLink to={"/blog"} className={styles.link + colours.link.papaya}>
                             blog posts
                         </NavLink>
                         . */}
@@ -75,7 +75,7 @@ export default function HomePage() {
 
             {/* IGYB */}
             <NonJaggedSection id="portfolioStart" colour="bg-smalt-800">
-                <h1 className={styles.title + colours.linkOnSmalt}>
+                <h1 className={styles.title + colours.link.smalt}>
                     {" "}
                     <a href="https://igotyouboo.netlify.app/">I Got You Boo</a>
                 </h1>
@@ -94,7 +94,7 @@ export default function HomePage() {
                             <a
                                 href="https://github.com/captainaomi"
                                 rel="noreferrer"
-                                className={styles.link + colours.linkOnSmalt}
+                                className={styles.link + colours.link.smalt}
                             >
                                 Naomi Mowbray
                             </a>{" "}
@@ -102,7 +102,7 @@ export default function HomePage() {
                             <a
                                 href="https://github.com/ella-jones"
                                 rel="noreferrer"
-                                className={styles.link + colours.linkOnSmalt}
+                                className={styles.link + colours.link.smalt}
                             >
                                 Ella Jones
                             </a>
@@ -148,7 +148,7 @@ export default function HomePage() {
 
             {/* Birdwatching API */}
             <JaggedSection>
-                <h1 className={styles.title + colours.linkOnPapaya}>
+                <h1 className={styles.title + colours.link.papaya}>
                     <a href="https://github.com/JackDixon019/JackDixon_T2A2">
                         Birdwatching API
                     </a>
@@ -191,7 +191,7 @@ export default function HomePage() {
 
             {/* Shiny Companion */}
             <NonJaggedSection colour="bg-orange-peel-500">
-                <h1 className={styles.title + colours.linkOnOrange}>
+                <h1 className={styles.title + colours.link.orange}>
                     <a
                         href="https://shiny-companion.netlify.app/"
                         rel="noreferrer"
@@ -212,7 +212,7 @@ export default function HomePage() {
                             <a
                                 href="https://github.com/O-App-Pesi"
                                 rel="noreferrer"
-                                className={styles.link + colours.linkOnOrange}
+                                className={styles.link + colours.link.orange}
                             >
                                 Joshua Thompson
                             </a>{" "}
@@ -226,7 +226,7 @@ export default function HomePage() {
                             <a
                                 href="https://github.com/ShinyHelper/ShinyHuntingCompanion_SV"
                                 rel="noreferrer"
-                                className={styles.link + colours.linkOnOrange}
+                                className={styles.link + colours.link.orange}
                             >
                                 Github repo
                             </a>{" "}
@@ -237,7 +237,7 @@ export default function HomePage() {
                             <a
                                 href="https://pokeapi.co/"
                                 rel="noreferrer"
-                                className={styles.link + colours.linkOnOrange}
+                                className={styles.link + colours.link.orange}
                             >
                                 PokeApi
                             </a>
@@ -278,7 +278,7 @@ export default function HomePage() {
 
             {/* Challenjour */}
             <JaggedSection>
-                <h1 className={styles.title + colours.linkOnPapaya}>
+                <h1 className={styles.title + colours.link.papaya}>
                     <a href="https://github.com/JackDixon019/Challenjour_React_App">
                         Challenjour React App
                     </a>

@@ -3,9 +3,17 @@ let styles = {
     title: "pt-16 font-Bebas-Neue text-5xl w-fit m-auto ",
 };
 let colours = {
-    linkOnPapaya: "text-scarlet-500 hover:text-smalt-700 ",
-    linkOnSmalt: " text-orange-peel-400 hover:text-scarlet-500 ",
-    linkOnOrange: " text-smalt-800 hover:text-papaya-whip-100 ",
+    link: {
+        papaya: " text-scarlet-500 hover:text-smalt-700 ",
+        smalt: " text-orange-peel-400 hover:text-scarlet-500 ",
+        orange: " text-smalt-800 hover:text-papaya-whip-100 ",
+    },
+    button: {
+        papaya: " text-scarlet-500 hover:text-scarlet-300 active: text-smalt-700 ",
+        smalt: " text-center text-orange-peel-400 hover:text-orange-peel-200 active:text-scarlet-500 ",
+        orange: "  text-smalt-800 hover:text-smalt-600 active:text-papaya-whip-100 ",
+
+    }
 };
 
 module.exports = {
