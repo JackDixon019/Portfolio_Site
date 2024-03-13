@@ -24,6 +24,7 @@ export default function BlogPage() {
                 <li className="list-none">
                     <ul>
                         <a
+                            href="#blog_post_0"
                             onClick={(e) => scrollToPost(e, "blog_post_0")}
                             className={styles.link + colours.link.papaya}
                         >
