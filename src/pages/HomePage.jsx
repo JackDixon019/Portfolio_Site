@@ -6,6 +6,7 @@ import iGotYouBoo from "../images/I_Got_You_Boo_Landing_Placeholder.png";
 import challenjour from "../images/Challenjour.png";
 import ERD from "../images/ERD.png";
 import shinyCompanion from "../images/Shiny_Companion_Screenshot.png";
+import asyncio from "../images/asyncio.png";
 
 export default function HomePage() {
     // smoothly scrolls to location on page
@@ -30,9 +31,7 @@ export default function HomePage() {
         <div id="HomePage" className="min-h-screen flex-col">
             {/* Intro */}
             <JaggedSection id="intro">
-                <h1 className={styles.title + colours.link.papaya}>
-                    Welcome!
-                </h1>
+                <h1 className={styles.title + colours.link.papaya}>Welcome!</h1>
                 <article className="pb-12">
                     <p className="m-auto mt-12 w-8/12 font-Montserrat">
                         My name is{" "}
@@ -325,6 +324,55 @@ export default function HomePage() {
                     </a>
                 </aside>
             </JaggedSection>
+
+            <NonJaggedSection colour="bg-smalt-800">
+                <h1 className={styles.title + colours.link.smalt}>
+                    <a
+                        href="https://github.com/JackDixon019/asyncioPoC"
+                        rel="noreferrer"
+                    >
+                        Asyncio Proof of Concept
+                    </a>
+                </h1>
+                <div className={portfolioFlexBoxStyle}>
+                    <img
+                        src={asyncio}
+                        alt="Screenshot of time saved by running process async"
+                        className={portfolioImageStyle}
+                    />
+                    <article className={portfolioArticleStyle}>
+                        <p>
+                            During my internship at Wicky, the CEO Nakul had a
+                            complaint that the webscraping service was taking
+                            too long to run, reaching upwards of 15 minutes for
+                            a full run-through. Looking into the code, I
+                            identified that we could be using the python Asyncio
+                            library to run our webscrapers with concurrency.
+                        </p>
+        
+                        <p>
+                            This is a proof-of concept for the idea, where I
+                            taught myself to use the asyncio library, and then
+                            constructed a test model to compare the async vs
+                            sync methods to demonstrate time-saving potential.
+                            After showcasing this model to Nakul, I was approved
+                            to work with the rest of the dev team in
+                            reformatting the existing code to work with the
+                            async library
+                        </p>
+                    </article>
+                </div>
+                <aside className="pb-12">
+                    <a href="https://github.com/JackDixon019/asyncioPoC">
+                        <i
+                            className={
+                                "fa-brands fa-github text-orange-peel-400 hover:text-scarlet-500" +
+                                portfolioIconStyle
+                            }
+                        />
+                    </a>
+                </aside>
+            </NonJaggedSection>
         </div>
     );
 }
